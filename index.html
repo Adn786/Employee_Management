@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <div class="top">
+    <button onclick="togglepopup()">Add Employee</button>
+   </div>
+   <table class="table">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Phone No</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+   </table>
+
+   <div class="popup" style="display: none">
+     <form class="popup-body" id="form">
+        <span class="close" onclick="togglepopup()"><b>&times;</b></span>
+        <input type="text" name="name" required placeholder="Employee Name">
+        <select name="role" required>
+            <option value="">----Select----</option>
+            <option value="QA">QA</option>
+            <option value="SDE">SDE</option>
+            <option value="CTO">CTO</option>
+            <option value="CTO">Thekedari</option>
+        </select>
+        <input type="number" name="salary" required placeholder="Enter Salary">
+        <input type="text" name="phoneNumber" required placeholder="Enter Phone Number">
+        <input type="email" name="email" required placeholder="Enter Email Address">
+        <input type="text" name="companyName" required placeholder="Enter Company Name">
+        <button>Add Employee</button>
+    </form>
+   </div>
+   
+<script src="./project.js"></script>
+</body>
+</html>
